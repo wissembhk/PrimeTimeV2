@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+
+
+#welcome {
+  color: hsla(0, 0%, 0%, .9);
+  font: normal 50px Varela Round, sans-serif;
+  height: 50px;
+  left: 0;
+  letter-spacing: 5px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  width: 100%;
+  animation: move linear 2000ms infinite;  
+}
+
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 #5F4B8BFF, 
+      3px -3px 0 #5F4B8BFF, 
+      2px -2px 0 #5F4B8BFF, 
+      1px -1px 0 #5F4B8BFF,
+      -4px 4px 0 #E69A8DFF, 
+      -3px 3px 0 #E69A8DFF, 
+      -2px 2px 0 #E69A8DFF, 
+      -1px 1px 0 #E69A8DFF
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 #E69A8DFF, 
+      -3px -3px 0 #E69A8DFF, 
+      -2px -2px 0 #E69A8DFF, 
+      -1px -1px 0 #E69A8DFF,
+      4px 4px 0 #5F4B8BFF, 
+      3px 3px 0 #5F4B8BFF, 
+      2px 2px 0 #5F4B8BFF, 
+      1px 1px 0 #5F4B8BFF      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 #5F4B8BFF, 
+      -3px 3px 0 #5F4B8BFF, 
+      -2px 2px 0 #5F4B8BFF, 
+      -1px 1px 0 #5F4B8BFF,
+      4px -4px 0 #E69A8DFF, 
+      3px -3px 0 #E69A8DFF, 
+      2px -2px 0 #E69A8DFF, 
+      1px -1px 0 #E69A8DFF
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 #E69A8DFF, 
+      3px 3px 0 #E69A8DFF, 
+      2px 2px 0 #E69A8DFF, 
+      1px 1px 0 #E69A8DFF,
+      -4px -4px 0 #5F4B8BFF, 
+      -3px -3px 0 #5F4B8BFF, 
+      -2px -2px 0 #5F4B8BFF, 
+      -1px -1px 0 #5F4B8BFF      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 #5F4B8BFF, 
+      3px -3px 0 #5F4B8BFF, 
+      2px -2px 0 #5F4B8BFF, 
+      1px -1px 0 #5F4B8BFF,
+      -4px 4px 0 #E69A8DFF, 
+      -3px 3px 0 #E69A8DFF, 
+      -2px 2px 0 #E69A8DFF, 
+      -1px 1px 0 #E69A8DFF
+    ;
+  }  
+  
+} 
+ .letters{
+  font : bold 50px/1.9em "Inter", "Source Sans Pro","Helvetica Neue", Arial, sans-serif
+}

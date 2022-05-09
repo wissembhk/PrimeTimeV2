@@ -16,13 +16,11 @@ import BrandSection from './sections/gym/brand'
 import FooterSection from './sections/gym/footer'
 import { useState } from 'react'
 const Gym = () => {
-    const [test, setTest] = useState(localStorage.getItem("test") || true);
     useEffect(() => {
       document.body.style.setProperty('--primary', '#000')
       document.body.style.setProperty('--secondary', '#000')
       document.body.style.setProperty('--light', '#000')
       document.body.style.setProperty('--dark', '#000')
-      console.log(JSON.parse(test));
     })
   
     return (

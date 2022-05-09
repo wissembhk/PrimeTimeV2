@@ -4,7 +4,6 @@ import { useContext, useEffect, useState } from "react";
 import { Alert, Card } from "reactstrap";
 import CommonLayout from "../../containers/common/common-layout";
 import { Store } from "../../utils/Store";
-import useStyles from "./style";
 import NextLink from 'next/link';
 import { BASE_URL } from "../../constant/constants";
 import { useRouter } from "next/router";
@@ -14,7 +13,6 @@ export default function OrderHistory() {
   const router = useRouter();
   const { state } = useContext(Store);
   const {userInfo} = state;
-  const classes = useStyles();
   const [orders ,Setorders]=useState([]);
   
   const fetchData = async () => {

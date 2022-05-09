@@ -1,37 +1,12 @@
 import React, { useState, Fragment, useEffect } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
-import { AllImgData, BagsImgData, FeshionImgData, ShoesImgData, WatchImgData } from './database';
-import Lightbox from 'react-image-lightbox-next';
+
 import {Container,Row,Col} from 'reactstrap'
 import axios from 'axios';
 import { BASE_URL } from '../../constant/constants';
 
-const feshion = [
-    require('../../public/assets/images/portfolio/1.jpg'),
-    require('../../public/assets/images/portfolio/2.jpg'),
-    require('../../public/assets/images/portfolio/3.jpg'),
-    require('../../public/assets/images/portfolio/4.jpg'),
-]
 
-const bags = [
-    require('../../public/assets/images/portfolio/5.jpg'),
-    require('../../public/assets/images/portfolio/6.jpg'),
-    require('../../public/assets/images/portfolio/7.jpg'),
-    require('../../public/assets/images/portfolio/8.png'),
-]
 
-const watches = [
-    require('../../public/assets/images/portfolio/11.jpg'),
-    require('../../public/assets/images/portfolio/10.jpg'),
-    require('../../public/assets/images/portfolio/12.png'),
-]
-
-const shoes = [
-    require('../../public/assets/images/portfolio/9.jpg'),
-    require('../../public/assets/images/portfolio/10.jpg'),
-    require('../../public/assets/images/portfolio/12.png'),
-    require('../../public/assets/images/portfolio/8.png'),
-]
 
 const AllImg = [
     require('../../public/assets/images/portfolio/1.jpg'),
@@ -103,6 +78,7 @@ return (
             </div>
             <div className={fluid || 'container'}>
                 <TabContent className="isotopeContainer row" activeTab={activeTab}>
+                    {streams ?(<>
                     <TabPane tabId="1">
                         {streams.map((stream, i) => {
                              let imgsrc="images/users/" + stream["_id"] + ".jpg";
@@ -199,7 +175,7 @@ return (
                            
                                     
                         })}
-                    </TabPane>
+                    </TabPane></>):null}
                     
                    
                     

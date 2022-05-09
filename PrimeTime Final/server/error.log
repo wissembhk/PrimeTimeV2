@@ -24658,3 +24658,623 @@
   ],
   timestamp: '5/9/2022, 2:36:27 AM GMT+2'
 }
+{
+  message: 'errr',
+  level: 'error',
+  timestamp: '5/10/2022, 1:43:08 AM GMT+2'
+}
+{
+  error: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+      at Function.Model.$wrapCallback (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\model.js:5087:32)
+      at C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\query.js:4510:21
+      at C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+      at new Promise (<anonymous>)
+      at promiseOrCallback (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+      at model.Query.exec (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\query.js:4509:10)
+      at model.Query.Query.then (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\query.js:4592:15)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      setName: 'atlas-fgshea-shard-0',
+      maxSetVersion: 1,
+      maxElectionId: 7fffffff0000000000000007,
+      servers: Map(3) {
+        'cluster0-shard-00-00.zlao8.mongodb.net:27017' => ServerDescription {
+          address: 'cluster0-shard-00-00.zlao8.mongodb.net:27017',
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:362:14)
+              at TLSSocket.<anonymous> (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:330:16)
+              at Object.onceWrapper (node:events:639:28)
+              at TLSSocket.emit (node:events:520:28)
+              at TLSSocket.Socket._onTimeout (node:net:501:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7),
+          roundTripTime: -1,
+          lastUpdateTime: 1038782674,
+          lastWriteDate: null,
+          opTime: null,
+          type: 'Unknown',
+          topologyVersion: { processId: 6267f0f12a11c00729df5c2c, counter: 4 },
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: []
+        },
+        'cluster0-shard-00-01.zlao8.mongodb.net:27017' => ServerDescription {
+          address: 'cluster0-shard-00-01.zlao8.mongodb.net:27017',
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:362:14)
+              at TLSSocket.<anonymous> (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:330:16)
+              at Object.onceWrapper (node:events:639:28)
+              at TLSSocket.emit (node:events:520:28)
+              at TLSSocket.Socket._onTimeout (node:net:501:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7),
+          roundTripTime: -1,
+          lastUpdateTime: 1038782658,
+          lastWriteDate: null,
+          opTime: null,
+          type: 'Unknown',
+          topologyVersion: { processId: 6267f1922e935c30b5f1a015, counter: 3 },
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: []
+        },
+        'cluster0-shard-00-02.zlao8.mongodb.net:27017' => ServerDescription {
+          address: 'cluster0-shard-00-02.zlao8.mongodb.net:27017',
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:362:14)
+              at TLSSocket.<anonymous> (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:330:16)
+              at Object.onceWrapper (node:events:639:28)
+              at TLSSocket.emit (node:events:520:28)
+              at TLSSocket.Socket._onTimeout (node:net:501:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7),
+          roundTripTime: -1,
+          lastUpdateTime: 1038782674,
+          lastWriteDate: null,
+          opTime: null,
+          type: 'Unknown',
+          topologyVersion: { processId: 6267f142f65a8feb1c9baee7, counter: 6 },
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: []
+        }
+      },
+      stale: false,
+      compatible: true,
+      compatibilityError: null,
+      logicalSessionTimeoutMinutes: null,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      commonWireVersion: 13
+    }
+  },
+  level: 'error',
+  message: "uncaughtException: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/\n" +
+    "MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/\n" +
+    '    at Function.Model.$wrapCallback (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\model.js:5087:32)\n' +
+    '    at C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4510:21\n' +
+    '    at C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at promiseOrCallback (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n' +
+    '    at model.Query.exec (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4509:10)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4592:15)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: "MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/\n" +
+    '    at Function.Model.$wrapCallback (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\model.js:5087:32)\n' +
+    '    at C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4510:21\n' +
+    '    at C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at promiseOrCallback (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n' +
+    '    at model.Query.exec (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4509:10)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4592:15)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Tue May 10 2022 00:43:08 GMT+0100 (heure normale d’Afrique de l’Ouest)',
+  process: {
+    pid: 16424,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.14.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 65769472,
+      heapTotal: 35655680,
+      heapUsed: 33303880,
+      external: 20026462,
+      arrayBuffers: 18541706
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 1038743 },
+  trace: [
+    {
+      column: 32,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: 'Function.Model.$wrapCallback',
+      line: 5087,
+      method: '$wrapCallback',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 4510,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 32,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: 'promiseOrCallback',
+      line: 31,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.exec',
+      line: 4509,
+      method: 'exec',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query.then',
+      line: 4592,
+      method: 'then',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '5/10/2022, 1:43:08 AM GMT+2'
+}
+{
+  error: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+      at Function.Model.$wrapCallback (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\model.js:5087:32)
+      at C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\query.js:4510:21
+      at C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+      at new Promise (<anonymous>)
+      at promiseOrCallback (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+      at model.Query.exec (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\query.js:4509:10)
+      at model.Query.Query.then (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\query.js:4592:15)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      setName: 'atlas-fgshea-shard-0',
+      maxSetVersion: 1,
+      maxElectionId: 7fffffff0000000000000007,
+      servers: Map(3) {
+        'cluster0-shard-00-00.zlao8.mongodb.net:27017' => ServerDescription {
+          address: 'cluster0-shard-00-00.zlao8.mongodb.net:27017',
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:362:14)
+              at TLSSocket.<anonymous> (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:330:16)
+              at Object.onceWrapper (node:events:639:28)
+              at TLSSocket.emit (node:events:520:28)
+              at TLSSocket.Socket._onTimeout (node:net:501:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7),
+          roundTripTime: -1,
+          lastUpdateTime: 1038782674,
+          lastWriteDate: null,
+          opTime: null,
+          type: 'Unknown',
+          topologyVersion: { processId: 6267f0f12a11c00729df5c2c, counter: 4 },
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: []
+        },
+        'cluster0-shard-00-01.zlao8.mongodb.net:27017' => ServerDescription {
+          address: 'cluster0-shard-00-01.zlao8.mongodb.net:27017',
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:362:14)
+              at TLSSocket.<anonymous> (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:330:16)
+              at Object.onceWrapper (node:events:639:28)
+              at TLSSocket.emit (node:events:520:28)
+              at TLSSocket.Socket._onTimeout (node:net:501:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7),
+          roundTripTime: -1,
+          lastUpdateTime: 1038782658,
+          lastWriteDate: null,
+          opTime: null,
+          type: 'Unknown',
+          topologyVersion: { processId: 6267f1922e935c30b5f1a015, counter: 3 },
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: []
+        },
+        'cluster0-shard-00-02.zlao8.mongodb.net:27017' => ServerDescription {
+          address: 'cluster0-shard-00-02.zlao8.mongodb.net:27017',
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:362:14)
+              at TLSSocket.<anonymous> (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:330:16)
+              at Object.onceWrapper (node:events:639:28)
+              at TLSSocket.emit (node:events:520:28)
+              at TLSSocket.Socket._onTimeout (node:net:501:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7),
+          roundTripTime: -1,
+          lastUpdateTime: 1038782674,
+          lastWriteDate: null,
+          opTime: null,
+          type: 'Unknown',
+          topologyVersion: { processId: 6267f142f65a8feb1c9baee7, counter: 6 },
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: []
+        }
+      },
+      stale: false,
+      compatible: true,
+      compatibilityError: null,
+      logicalSessionTimeoutMinutes: null,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      commonWireVersion: 13
+    }
+  },
+  level: 'error',
+  message: "uncaughtException: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/\n" +
+    "MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/\n" +
+    '    at Function.Model.$wrapCallback (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\model.js:5087:32)\n' +
+    '    at C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4510:21\n' +
+    '    at C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at promiseOrCallback (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n' +
+    '    at model.Query.exec (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4509:10)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4592:15)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: "MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/\n" +
+    '    at Function.Model.$wrapCallback (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\model.js:5087:32)\n' +
+    '    at C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4510:21\n' +
+    '    at C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at promiseOrCallback (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n' +
+    '    at model.Query.exec (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4509:10)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4592:15)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Tue May 10 2022 00:43:08 GMT+0100 (heure normale d’Afrique de l’Ouest)',
+  process: {
+    pid: 16424,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.14.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 67932160,
+      heapTotal: 35655680,
+      heapUsed: 33894808,
+      external: 20048362,
+      arrayBuffers: 18563566
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 1038743 },
+  trace: [
+    {
+      column: 32,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: 'Function.Model.$wrapCallback',
+      line: 5087,
+      method: '$wrapCallback',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 4510,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 32,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: 'promiseOrCallback',
+      line: 31,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.exec',
+      line: 4509,
+      method: 'exec',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query.then',
+      line: 4592,
+      method: 'then',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '5/10/2022, 1:43:08 AM GMT+2'
+}
+{
+  error: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+      at Function.Model.$wrapCallback (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\model.js:5087:32)
+      at C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\query.js:4510:21
+      at C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+      at new Promise (<anonymous>)
+      at promiseOrCallback (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+      at model.Query.exec (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\query.js:4509:10)
+      at model.Query.Query.then (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongoose\lib\query.js:4592:15)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      setName: 'atlas-fgshea-shard-0',
+      maxSetVersion: 1,
+      maxElectionId: 7fffffff0000000000000007,
+      servers: Map(3) {
+        'cluster0-shard-00-00.zlao8.mongodb.net:27017' => ServerDescription {
+          address: 'cluster0-shard-00-00.zlao8.mongodb.net:27017',
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:362:14)
+              at TLSSocket.<anonymous> (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:330:16)
+              at Object.onceWrapper (node:events:639:28)
+              at TLSSocket.emit (node:events:520:28)
+              at TLSSocket.Socket._onTimeout (node:net:501:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7),
+          roundTripTime: -1,
+          lastUpdateTime: 1038782674,
+          lastWriteDate: null,
+          opTime: null,
+          type: 'Unknown',
+          topologyVersion: { processId: 6267f0f12a11c00729df5c2c, counter: 4 },
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: []
+        },
+        'cluster0-shard-00-01.zlao8.mongodb.net:27017' => ServerDescription {
+          address: 'cluster0-shard-00-01.zlao8.mongodb.net:27017',
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:362:14)
+              at TLSSocket.<anonymous> (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:330:16)
+              at Object.onceWrapper (node:events:639:28)
+              at TLSSocket.emit (node:events:520:28)
+              at TLSSocket.Socket._onTimeout (node:net:501:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7),
+          roundTripTime: -1,
+          lastUpdateTime: 1038782658,
+          lastWriteDate: null,
+          opTime: null,
+          type: 'Unknown',
+          topologyVersion: { processId: 6267f1922e935c30b5f1a015, counter: 3 },
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: []
+        },
+        'cluster0-shard-00-02.zlao8.mongodb.net:27017' => ServerDescription {
+          address: 'cluster0-shard-00-02.zlao8.mongodb.net:27017',
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:362:14)
+              at TLSSocket.<anonymous> (C:\Users\Wissem\Desktop\PrimeTimeV2\PrimeTime Final\server\node_modules\mongodb\lib\core\connection\connect.js:330:16)
+              at Object.onceWrapper (node:events:639:28)
+              at TLSSocket.emit (node:events:520:28)
+              at TLSSocket.Socket._onTimeout (node:net:501:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7),
+          roundTripTime: -1,
+          lastUpdateTime: 1038782674,
+          lastWriteDate: null,
+          opTime: null,
+          type: 'Unknown',
+          topologyVersion: { processId: 6267f142f65a8feb1c9baee7, counter: 6 },
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: []
+        }
+      },
+      stale: false,
+      compatible: true,
+      compatibilityError: null,
+      logicalSessionTimeoutMinutes: null,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      commonWireVersion: 13
+    }
+  },
+  level: 'error',
+  message: "uncaughtException: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/\n" +
+    "MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/\n" +
+    '    at Function.Model.$wrapCallback (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\model.js:5087:32)\n' +
+    '    at C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4510:21\n' +
+    '    at C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at promiseOrCallback (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n' +
+    '    at model.Query.exec (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4509:10)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4592:15)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: "MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/\n" +
+    '    at Function.Model.$wrapCallback (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\model.js:5087:32)\n' +
+    '    at C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4510:21\n' +
+    '    at C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at promiseOrCallback (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n' +
+    '    at model.Query.exec (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4509:10)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js:4592:15)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Tue May 10 2022 00:43:08 GMT+0100 (heure normale d’Afrique de l’Ouest)',
+  process: {
+    pid: 16424,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.14.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\index.js'
+    ],
+    memoryUsage: {
+      rss: 67571712,
+      heapTotal: 36179968,
+      heapUsed: 33551000,
+      external: 20070198,
+      arrayBuffers: 18585386
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 1038743 },
+  trace: [
+    {
+      column: 32,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\model.js',
+      function: 'Function.Model.$wrapCallback',
+      line: 5087,
+      method: '$wrapCallback',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js',
+      function: null,
+      line: 4510,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 32,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: 'promiseOrCallback',
+      line: 31,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.exec',
+      line: 4509,
+      method: 'exec',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\Wissem\\Desktop\\PrimeTimeV2\\PrimeTime Final\\server\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query.then',
+      line: 4592,
+      method: 'then',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '5/10/2022, 1:43:08 AM GMT+2'
+}

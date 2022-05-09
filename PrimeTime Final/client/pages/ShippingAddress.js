@@ -22,11 +22,15 @@ const ShippingAddress = () => {
   const [postalCode, setPostalCode] = useState(
     shippingAddress.postalCode || ''
   );
+  const [user, setUser] = useState({});
   useEffect(() => {
-    if (!localStorage.getItem("user")) {
+    setUser(JSON.parse(localStorage.getItem("user")));
+  }, []);
+  useEffect(() => {
+    if (!user) {
       navigate.push('/cart');
     }
-  }, [localStorage.getItem("user"), navigate]);
+  }, [user, navigate]);
   const [country, setCountry] = useState(shippingAddress.country || '');
   const submitHandler = (e) => {
     e.preventDefault();
@@ -40,16 +44,7 @@ const ShippingAddress = () => {
         country,
       },
     });
-    localStorage.setItem(
-      'shippingAddress',
-      JSON.stringify({
-        fullName,
-        address,
-        city,
-        postalCode,
-        country,
-      })
-    );
+  
     Cookies.set(
       'shippingAddress',
       JSON.stringify({
@@ -65,7 +60,7 @@ const ShippingAddress = () => {
    
   return (
     <CommonLayout>
-      {localStorage.getItem("user")? (
+      {user? (
                   
                   <div className="container small-container">
                     <CheckoutSteps activeStep={1}></CheckoutSteps>

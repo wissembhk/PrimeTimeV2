@@ -2,17 +2,9 @@ import React, { Fragment, useState, useEffect } from 'react';
 import Layout from '../../containers/common/common-layout'
 import axios from 'axios';
 import Slider from 'react-slick';
-import { PortfolioDetail1Data } from './database';
 import { BASE_URL } from '../../constant/constants';
 
 
-const images = [
-    require('../../public/assets/images/portfolio/2.jpg'),
-    require('../../public/assets/images/portfolio/3.jpg'),
-    require('../../public/assets/images/portfolio/5.jpg'),
-    require('../../public/assets/images/portfolio/4.jpg'),
-    require('../../public/assets/images/portfolio/5.jpg')
-]
 
 
 var settings1 = {
